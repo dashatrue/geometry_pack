@@ -7,7 +7,7 @@ pip install area-package
 
 Для использования в коде используется импорт:  
 ```python
-from area_package import Circle, Triangle.
+from area_package import Circle, Triangle
 ```
 
 Пакет также доступен по ссылке:  
