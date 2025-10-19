@@ -2,7 +2,7 @@ import math
 from abc import ABC, abstractmethod
 class Shape():
     @abstractmethod
-    def area(self):
+    def area(self): # абстрактный метод, который можно переопределить в классе-наследнике для любой фигуры
         pass
 
 class Circle(Shape):
@@ -22,6 +22,7 @@ class Triangle(Shape):
         p = (self.a + self.b + self.c) / 2
         return (p * (p - self.a) * (p - self.b) * (p - self.c))**0.5
 
+    # проверка на то, является ли треугольник правильным
     def is_right_triangle(self):
         sides = sorted([self.a, self.b, self.c])
         return math.isclose(sides[0]**2 + sides[1]**2, sides[2]**2)
